@@ -8,6 +8,7 @@
     %meta{:content => "DJ Jolene", :name => "description"}/
     %meta{:content => "width=device-width", :name => "viewport"}/
 
+    %link{:href=>"http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css", :rel=>"stylesheet"}
     %link{:href => "site.css", :rel => "stylesheet"}/
 
     /[if lt IE 9]
@@ -23,6 +24,37 @@
 
   %body
 
-    <iframe width="660" height="180" src="//www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2Fdjjolene%2Fskylight%2F&amp;embed_uuid=0df76bc8-e872-4287-b4a4-13d35904d115&amp;replace=0&amp;hide_cover=1&amp;embed_type=widget_standard&amp;hide_tracklist=1" frameborder="0"></iframe><div style="clear: both; height: 3px; width: 652px;"></div><p style="display: block; font-size: 11px; font-family: 'Open Sans', Helvetica, Arial, sans-serif; margin: 0px; padding: 3px 4px; color: rgb(153, 153, 153); width: 652px;"><a href="http://www.mixcloud.com/djjolene/skylight/?utm_source=widget&amp;amp;utm_medium=web&amp;amp;utm_campaign=base_links&amp;amp;utm_term=resource_link" target="_blank" style="color:#808080; font-weight:bold;">Skylight</a><span> by </span><a href="http://www.mixcloud.com/djjolene/?utm_source=widget&amp;amp;utm_medium=web&amp;amp;utm_campaign=base_links&amp;amp;utm_term=profile_link" target="_blank" style="color:#808080; font-weight:bold;">Dj Jolene</a><span> on </span><a href="http://www.mixcloud.com/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=homepage_link" target="_blank" style="color:#808080; font-weight:bold;"> Mixcloud</a></p><div style="clear: both; height: 3px; width: 652px;"></div>
+    .banner
+      .container
+        .row
+          .col-md-4
+            <img src="dj-jolene-logo.png" alt="DJ Jolene" />
+            %h1
+              DJ Jolene
 
-    <iframe width="660" height="180" src="//www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2Fdjjolene%2Fpotent-purple%2F&amp;embed_uuid=7bcddf39-bd0e-4414-bb62-c34189057d2e&amp;replace=0&amp;hide_cover=1&amp;embed_type=widget_standard&amp;hide_tracklist=1" frameborder="0"></iframe><div style="clear: both; height: 3px; width: 652px;"></div><p style="display: block; font-size: 11px; font-family: 'Open Sans', Helvetica, Arial, sans-serif; margin: 0px; padding: 3px 4px; color: rgb(153, 153, 153); width: 652px;"><a href="http://www.mixcloud.com/djjolene/potent-purple/?utm_source=widget&amp;amp;utm_medium=web&amp;amp;utm_campaign=base_links&amp;amp;utm_term=resource_link" target="_blank" style="color:#808080; font-weight:bold;">Potent Purple</a><span> by </span><a href="http://www.mixcloud.com/djjolene/?utm_source=widget&amp;amp;utm_medium=web&amp;amp;utm_campaign=base_links&amp;amp;utm_term=profile_link" target="_blank" style="color:#808080; font-weight:bold;">Dj Jolene</a><span> on </span><a href="http://www.mixcloud.com/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=homepage_link" target="_blank" style="color:#808080; font-weight:bold;"> Mixcloud</a></p><div style="clear: both; height: 3px; width: 652px;"></div>
+          .col-md-8
+            %h2.pull-right
+              Seamlessly mixed underground House music from New York City
+
+
+    .content
+      .container
+        .row
+          .col-md-8
+
+            <iframe width="660" height="180" src="//www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2Fdjjolene%2Fskylight%2F&amp;embed_uuid=0df76bc8-e872-4287-b4a4-13d35904d115&amp;replace=0&amp;hide_cover=1&amp;embed_type=widget_standard&amp;hide_tracklist=1" frameborder="0"></iframe>
+
+            <iframe width="660" height="180" src="//www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2Fdjjolene%2Fpotent-purple%2F&amp;embed_uuid=7bcddf39-bd0e-4414-bb62-c34189057d2e&amp;replace=0&amp;hide_cover=1&amp;embed_type=widget_standard&amp;hide_tracklist=1" frameborder="0"></iframe>
+
+          .col-md-4
+            %p.lead
+              / TODO: short bio here
+
+            .mailing-list
+              / TODO: mailchimp form here
+
+            .contact
+              / TODO: contact info here
+
+    <script type="text/javascript" src="retina-1.1.0.min.js"></script>
+

@@ -1,2 +1,28 @@
+.banner {
 
+  padding: 20px 0;
+  margin: 0 0 20px 0;
+  background: #808080;
 
+  h1, h2  {
+    color: #fff;
+    line-height: 83px;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    display: none;
+    font-weight: 800;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  h2 {
+
+    font-weight: 300;
+    font-size: 24px;
+    opacity: 0.8;
+  }
+}
