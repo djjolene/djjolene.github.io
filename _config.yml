@@ -6,13 +6,14 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "djjolene.com"
 twitter_username: djjolene
-github_username: djjolene
-
-# Build settings
+paginate: 10
+permalink: /:title/
 markdown: kramdown
-theme: minima
+sass:
+  style: compressed
 gems:
   - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
