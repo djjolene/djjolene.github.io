@@ -1,8 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.5.0'
+ruby '2.5.1'
 
-gem 'jekyll', '~> 3.7.2'
-gem "jekyll-feed", "~> 0.9"
-
-gem 'jekyll-paginate', '~> 1.1'
-gem 'html-proofer', '~> 3.8.0'
+gem 'github-pages', '~> 192', group: :jekyll_plugins
