@@ -1,5 +1,6 @@
 ---
 layout: default
+category: home
 ---
 
 
@@ -7,7 +8,7 @@ layout: default
 
 <div class="grid grid-cols-4 gap-5">
   {% for post in paginator.posts %}
-  <a href="https://www.mixcloud.com/djjolene/{{ post.title | slugify }}/" target="_blank" class="palette-chip block w-full overflow-hidden shadow-md bg-white border-solid border border-gray-600">
+  <a href="https://www.mixcloud.com/djjolene/{{ post.title | slugify }}/" target="_blank" class="palette-chip block w-full overflow-hidden shadow-md bg-white border-solid border-0 border-gray-600">
     <div
       class="h-40 bg-gray-300"
       style="background-color: #{{ post.color }};"

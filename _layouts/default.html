@@ -7,7 +7,9 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    {% seo %}
+    {% seo title=false %}
+
+    <title>{% if page.category == "home" %}{{ site.title }} | {{ site.tagline }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
 
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
