@@ -1,12 +1,19 @@
 title: DJ Jolene
-email: hello@djjlone.com
+email: hello@djjolene.com
 tagline: Booty-shaking house music. Underground. NYC.
+author: DJ Jolene
 description: > # this means to ignore newlines until "baseurl:"
-  DJ Jolene has been rocking NYC with her blend of deep sexy house music for over a decade. She is the founder of the House channel for the popular Digitally Imported internet radio station and has also taught regularly at New York's Scratch DJ Academy. Her driving, bass-heavy mixes are influenced by the cities in which she has resided: London, San Francisco and New York.
+  DJ Jolene has been rocking NYC with her blend of deep sexy house music for almost two decades. She is the founder of the House channel at DI.FM, and regularly teaches at New York's Scratch DJ Academy. Her driving, bass-heavy mixes are influenced by the cities in which she's lived: London, San Francisco, and New York.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "djjolene.com"
-twitter_username: djjolene
-paginate: 10
+url: "https://djjolene.com"
+twitter:
+  username: djjolene
+  card: summary
+social:
+  links:
+    - https://www.instagram.com/djjolene/
+    - https://www.mixcloud.com/djjolene/
+paginate: 100 
 permalink: /:title/
 markdown: kramdown
 sass:
@@ -14,6 +21,9 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
