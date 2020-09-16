@@ -13,7 +13,7 @@ social:
   links:
     - https://www.instagram.com/djjolene/
     - https://www.mixcloud.com/djjolene/
-paginate: 100 
+paginate: 500 
 permalink: /:title/
 markdown: kramdown
 sass:
