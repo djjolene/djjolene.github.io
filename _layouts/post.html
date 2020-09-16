@@ -4,11 +4,11 @@ layout: default
 
 
 
-<h1 class="text-gray-800 font-extrabold text-base text-2xl mb-5">Mix: {{ page.title }}</h1>
-<a href="https://www.mixcloud.com/djjolene/{{ post.title | slugify }}/" class="palette-chip block w-full overflow-hidden shadow-md bg-white border-solid border-0 border-gray-800">
+<h1 class="text-gray-800 text-base text-2xl mb-5">Mix: {{ page.title }}</h1>
+<a href="https://www.mixcloud.com/djjolene/{{ page.title | slugify }}/" target="_blank" class="palette-chip block w-full overflow-hidden shadow-md bg-white border-solid border border-gray-500">
   <div
     class="h-40 bg-gray-300"
-    style="background-color: #{{ post.color }};"
+    style="background-color: #{{ page.color }};"
   ></div>
   <div class="px-4 py-4">
     <ul class="text-gray-900 font-light text-base">
