@@ -1,3 +1,22 @@
 ---
 layout: default
 ---
+
+
+
+<h1 class="text-gray-800 font-extrabold text-base text-2xl mb-5">Mix: {{ page.title }}</h1>
+<a href="https://www.mixcloud.com/djjolene/{{ post.title | slugify }}/" class="palette-chip block w-full overflow-hidden shadow-md bg-white border-solid border-0 border-gray-800">
+  <div
+    class="h-40 bg-gray-300"
+    style="background-color: #{{ post.color }};"
+  ></div>
+  <div class="px-4 py-4">
+    <ul class="text-gray-900 font-light text-base">
+
+      <li>&#9658; {{ page.title }}</li>
+      <li class="text-gray-600">Released on {{ page.date | date: '%B %d, %Y' }}</li>
+      <li class="text-gray-600">{{ page.pantone }}</li>
+
+    </ul>
+  </div>
+</a>

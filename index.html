@@ -3,23 +3,17 @@ layout: default
 ---
 
 
-<!-- <h1>Listen to Colorsplash Mixes:</h1> -->
-
-<div class="grid grid-cols-3 gap-5">
-{% for post in paginator.posts %}
-  <div class="flex items-center">
-  <div class="w-20 h-20 bg-gray-300 rounded-md shadow-inner mr-3" style="background-color: #{{ post.color }};">
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-        <rect x="0" y="0" width="100" height="100"  />
-      </svg> -->
+<h1 class="text-gray-800 font-extrabold text-base text-2xl mb-5">Listen to Colorsplash Mixes</h1>
+<div class="grid grid-cols-4 gap-5">
+  {% for post in paginator.posts %}
+  <a href="https://www.mixcloud.com/djjolene/{{ post.title | slugify }}/" class="palette-chip block w-full overflow-hidden shadow-md bg-white border-solid border-0 border-gray-800">
+    <div
+      class="h-40 bg-gray-300"
+      style="background-color: #{{ post.color }};"
+    ></div>
+    <div class="px-4 py-4">
+      <p class="text-gray-900 font-light text-base">&#9658; {{ post.title }}</p>
     </div>
-    <div>
-
-      {{ post.title }}
-
-    </div>
-  </div>
-
-{% endfor %}
+  </a>
+  {% endfor %}
 </div>
-<!-- {% include pagination.html %} -->
