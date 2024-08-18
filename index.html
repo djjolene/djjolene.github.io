@@ -9,7 +9,7 @@ image: https://djjolene.com/assets/images/dj-jolene-card-v2.jpg
 
 <div class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-5">
   {% for post in paginator.posts %}
-  <a href="https://www.mixcloud.com/djjolene/{{ post.title | slugify }}/" target="_blank" class="palette-chip block w-full overflow-hidden shadow-md bg-white rounded">
+  <a href="https://soundcloud.com/dj-jolene/{{ post.title | slugify }}?utm_source=djjolene.com" target="_blank" class="palette-chip block w-full overflow-hidden shadow-md bg-white rounded">
     <div
       class="h-40 bg-gray-300"
       style="background-color: #{{ post.color }};"
